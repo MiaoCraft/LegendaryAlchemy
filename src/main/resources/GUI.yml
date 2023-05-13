@@ -1,0 +1,112 @@
+main:
+  title: '丹药炼制 - 选择丹药配方分类'
+  size: 9
+  #GUI元素自定义
+  set:
+    丹药分类按钮1:
+      name: '&c低级丹药'
+      id: PAPER
+      data: 0
+      amount: 1
+      lore:
+        - '&7&m---------------------'
+        - '&e - 炼制 &c低级丹药'
+        - '&7&m---------------------'
+      #在GUI中的位置 slot: x || slots: [x,x]
+      slot: 4
+      #打开丹药分类 删去即关闭该功能
+      openCategorize: 低级丹药.yml
+    装饰1:
+      name: '&f '
+      id: STAINED_GLASS_PANE
+      data: 0
+      amount: 1
+      lore:
+        - ' '
+      slots: [ 0,1,2,3,5,6,7,8 ]
+#分类的GUI设置
+CategorizeGui:
+  #最终为：title+分类名字+页数
+  title: '丹药炼制 - '
+  #GUI的尺寸
+  size: 36
+  #图纸的位置
+  PaperSlots: [9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
+  #系统按钮
+  systemPart:
+    #下一页按钮
+    nextItem:
+      name: '&f下一页'
+      id: ARROW
+      data: 0
+      amount: 1
+      lore:
+        - '&f '
+      #在GUI中的位置
+      slot: 35
+    #下一页按钮
+    preItem:
+      name: '&f上一页'
+      id: ARROW
+      data: 0
+      amount: 1
+      lore:
+        - '&f '
+      slot: 27
+    #返回按钮
+    backItem:
+      name: '&f返回'
+      id: BARRIER
+      data: 0
+      amount: 1
+      lore:
+        - '&f '
+      slot: 31
+  #自定义装饰
+  CustomPart:
+    装饰1:
+      name: '&f '
+      id: STAINED_GLASS_PANE
+      data: 0
+      amount: 1
+      lore:
+        - ' '
+      slots: [0,1,2,3,4,5,6,7,8,28,29,30,32,33,34]
+#药材投入GUI
+PutGui:
+  #%hot%为当前火候值
+  title: '当前火候 &c%hot%'
+  size: 27
+  #药材投入的位置
+  MaterialPutSlot: 13
+  systemPart:
+    cancel:
+      name: '&4取消炼制'
+      id: BARRIER
+      data: 0
+      amount: 1
+      lore:
+        - '&f'
+        - '&7- &c 中断&f炼制'
+        - '&7- &f 返回已投入的药材'
+      slot: 10
+    put:
+      name: '&a确认投入'
+      id: WATER_BUCKET
+      data: 0
+      amount: 1
+      lore:
+        - '&f'
+        - '&f- 将药材放入左边&e槽位&f内'
+        - '&7- &e点击后&f确认投入材料'
+      slot: 16
+  #自定义装饰
+  CustomPart:
+    装饰1:
+      name: '&f '
+      id: STAINED_GLASS_PANE
+      data: 14
+      amount: 1
+      lore:
+        - ' '
+      slots: [0,1,2,3,4,5,6,7,8,9,11,12,14,15,17,18,19,20,21,22,23,24,25,26]

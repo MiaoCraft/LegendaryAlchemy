@@ -1,0 +1,43 @@
+Papers:
+  测试1:
+    #图纸 用于在分类界面中展示 （为插件保存的物品ID）
+    paperItem: 保存2
+    #产物 用于炼制成功后直接给与玩家 （为插件保存的物品ID）
+    item: 保存1
+    #炼制需求 格式 n=材料名称;a=数量;h=火候值
+    #炼制需求 格式 t=原版ID;d=原版DATA值;a=数量;h=火候值
+    need:
+      - 'n=&c药草;a=3;h=2'
+      - 't=WATER_BUCKET;d=0;a=3;h=5'
+      - 't=DIAMOND;d=0;a=2;h=1'
+    #炼制需要的等级
+    level: 0
+    #成功几率 1为100% 0.9为90%....
+    chance: 0.9
+    #该配方的最大火候值
+    maxhot: 10
+    #该配方炼制时间限制 秒为单位
+    time: 100
+    #失败后设置
+    fail:
+      #是否返回炼制材料
+      backMaterial: true
+      #是否在返回炼制材料的基础上随机消失一种材料
+      #注意：此项需 backMaterial 为 true 时方可生效。 设置为0则关闭该功能
+      removeRandom: true
+      #给与的炼丹经验
+      exp: 1.0
+      #运行指令 [player]玩家发送指令 [op]以op权限发送指令 [console]从后台发送指令 [message]xxx 给玩家发送消息 [title]XXX;XXX 为玩家发送标题 [notice]xxx 发送全服通告
+      # %player% 为玩家名称
+      run:
+        - '[message]&f你真笨'
+        - '[player]/say 我真笨'
+    #成功后设置
+    success:
+      #给与的炼丹经验
+      exp: 5.0
+      #运行指令 [player]玩家发送指令 [op]以op权限发送指令 [console]从后台发送指令 [message]xxx 给玩家发送消息 [title]XXX;XXX 为玩家发送标题 [notice]xxx 发送全服通告
+      # %player% 为玩家名称
+      run:
+        - '[message]&f你真笨'
+        - '[player]/say 我真笨'

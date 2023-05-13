@@ -1,0 +1,49 @@
+Store:
+  yaml:
+    enable: true
+  mysql:
+    enable: false
+    hostname: localhost
+    port: 3306
+    databasename: DatabaseName
+    user: root
+    password: yourword
+Set:
+  #全息相关
+  Hologram:
+    #可选 HolographicDisplays , CMI , DecentHolograms
+    use: HolographicDisplays
+  #等级相关设置
+  level:
+    #最大等级
+    maxlevel: 10
+    #每级需要的经验
+    require:
+      #0 -> 1 需要的经验
+      0: 50
+      1: 100
+      2: 200
+      3: 400
+      4: 600
+      5: 800
+      6: 1500
+      7: 3000
+      8: 4500
+      9: 6000
+  #火候显示
+  #以下方的设置为例，则最终显示(假设当前火候值为1): &e火候值: &a✦&7✦✦✦✦✦✦✦
+  hot:
+    pre: '&e火候值: '
+    arg: '✦'
+    color1: '&a'
+    color2: '&7'
+  #音效设置
+  sound:
+    #投放药材时音效
+    put: ITEM_BOTTLE_FILL
+    #点击炼制药时音效
+    start: BLOCK_NOTE_BLOCK_BELL
+    #炼制成功时音效
+    success: ENTITY_FIREWORK_ROCKET_LAUNCH
+    #炼制失败时音效
+    fail: ENTITY_ITEM_BREAK

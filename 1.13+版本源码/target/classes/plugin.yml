@@ -1,0 +1,9 @@
+name: LegendaryAlchemy
+version: '${project.version}'
+main: com.gyzer.lianyao.legendaryalchemy.LegendaryAlchemy
+softdepend:
+  - DecentHolograms
+  - HolographicDisplays
+  - PlaceholderAPI
+commands:
+  lamy:
