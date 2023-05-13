@@ -1,0 +1,25 @@
+保存1:
+  ==: org.bukkit.inventory.ItemStack
+  type: FIREBALL
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §e回春丹
+保存2:
+  ==: org.bukkit.inventory.ItemStack
+  type: EMPTY_MAP
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §e回春丹 §3配方
+    lore:
+      - §f
+      - §3炼制等级： §e0
+      - §f
+      - §f在火候为 §d2 §f时放入 §c药草3个
+      - §f在火候为 §d5 §f时放入 §7水桶3个
+      - §f在火候为 §d1 §f时放入 §7钻石2个
+      - §f
+      - §a丹药效果
+      - §f - HP+50
+
